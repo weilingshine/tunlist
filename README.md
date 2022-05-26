@@ -14,4 +14,5 @@
 * [11_考區查詢___查詢榜單](https://weilingshine.github.io/tunlist/11_exame_school.html)
 * [12_考區查詢___依試場查詢](https://weilingshine.github.io/tunlist/12_exame_number.html)
 * [13_考區查詢___查詢榜單](https://weilingshine.github.io/tunlist/13_county_result.html)
+* [14_放榜服務懶人包](https://weilingshine.github.io/tunlist/14_freshman_gift.html)
 * [demo toggle](https://weilingshine.github.io/tunlist/demo.html)
