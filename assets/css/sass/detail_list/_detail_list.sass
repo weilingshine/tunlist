@@ -83,7 +83,8 @@ section.tunlistSect
         display: flex
         align-items: center
         justify-content: center
-        font-size: 19px
+        font-size: 18px
+        line-height: 18px
         color: $color_white
         @include smScreen
             width: 70px
@@ -96,14 +97,30 @@ section.tunlistSect
         display: flex
         justify-content: center
         align-items: center
-        padding: 4px 0 5px
+        flex-direction: column
+        padding: 8px 0 11px
         width: 70px
+        // max-width: 90px
         border-radius: 4px
+        
     &__admission
         background: $color_red
     // 備取
     &__alternate
         background: $color_main
+    // 
+    &__type
+        margin: 1px 3px 0
+        padding-bottom: 4px
+        margin-bottom: 4px
+        display: flex
+        justify-content: center
+        flex-wrap: nowrap
+        text-align: center
+        font-weight: $font_weight_400
+        border-bottom: 1px dotted rgba(255, 255, 255, .5)
+        font-size: 14px
+        line-height: 15px
     // 號碼姓名區
     &__info
         display: flex

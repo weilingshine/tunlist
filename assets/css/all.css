@@ -1730,7 +1730,8 @@ section.tunlistSect_inner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 19px;
+  font-size: 18px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -1755,7 +1756,11 @@ section.tunlistSect_inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4px 0 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8px 0 11px;
   width: 70px;
   border-radius: 4px;
 }
@@ -1766,6 +1771,25 @@ section.tunlistSect_inner {
 
 .detail__alternate {
   background: #6fcabd;
+}
+
+.detail__type {
+  margin: 1px 3px 0;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 15px;
 }
 
 .detail__info {
@@ -1913,9 +1937,10 @@ section.tunlistSect_inner {
 }
 
 .detail__school-list .detail__admission, .detail__school-list .detail__alternate {
-  padding-top: 0;
-  padding-bottom: 2px;
+  padding-top: 4px;
+  padding-bottom: 7px;
   font-size: 16px;
+  line-height: 16px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -1926,9 +1951,18 @@ section.tunlistSect_inner {
 
 @media (min-width: 576px) {
   .detail__school-list .detail__admission, .detail__school-list .detail__alternate {
-    font-size: 19px;
+    font-size: 18px;
     width: 70px;
+    padding-top: 6px;
+    padding-bottom: 9px;
   }
+}
+
+.detail__school-list .detail__type {
+  font-size: 13px;
+  margin: 1px 0 0;
+  padding-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .detail__school-name {
