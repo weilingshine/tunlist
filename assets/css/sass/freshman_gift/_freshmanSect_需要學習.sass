@@ -1,0 +1,78 @@
+
+.freshmanSect
+    header
+        h2
+            font-size: 20px
+            color: $color_text_gray_dark
+    .form-check-label
+        font-size: 20px
+        color: $color_text_gray_dark
+    .form-check
+        input[type="radio"]
+            position: absolute
+            // visibility: hidden
+        // &:hover
+        //     .freshman
+        //         &__check
+        //             border: 1px solid $color_main
+        //             &::before
+        //                 display: block
+        //                 position: absolute
+        //                 content: ''
+        //                 border-radius: 2px
+        //                 height: 25px
+        //                 width: 25px
+        //                 top: 0
+        //                 left: 0
+        //                 margin: auto
+        //                 transition: background 0.25s linear
+        // input[type="radio"]:checked ~ .freshman__check
+        //     border: 1px solid $color_main
+        // input[type="radio"]:checked ~ .freshman__check::before
+        //     background: $color_main  url('../img/main/icon_check.svg') 
+        // input[type="radio"]:checked ~ label
+        //     color: $color_main
+                    
+
+
+        .freshman
+            &__check
+                display: block
+                position: absolute
+                border: 1px solid $color_main
+                border-radius: 4px
+                height: 25px
+                width: 25px
+                top: -50%
+                transform: 
+                left: 0
+                z-index: 5
+                transition: border .25s linear
+                // &::before
+                //     display: block
+                //     position: absolute
+                //     content: ''
+                //     border-radius: 2px
+                //     height: 25px
+                //     width: 25px
+                //     top: 0
+                //     left: 0
+                //     margin: auto
+                //     transition: background 0.25s linear
+               
+
+    
+    
+
+
+
+
+
+.freshman
+    &__img
+        margin: 0 auto
+        width: 200px
+        @include smScreen
+            width: 284px
+   
+
