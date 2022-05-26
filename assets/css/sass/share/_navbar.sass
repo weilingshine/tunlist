@@ -65,6 +65,9 @@
             @include lgScreen
                 padding-right: .5rem
                 padding-left: .5rem
+            font-size: unset
+            @include  lgScreen_1110
+                font-size: 19px
             @include xlScreen
                 padding-right: 1rem
                 padding-left:  1rem
@@ -90,7 +93,24 @@
                 &:focus
                     color: $color_blue_dark
                     background-color: #e9ecef
+// .navbar-expand-lg 
+//     .navbar-nav
+//         @include lgScreen
+//             flex-direction: column
+//         @include lgScreen_1110
+//             flex-direction: row
+        
 
+//     .collapse.navbar-collapse
+//         @include lgScreen
+//             display: none !important
+//         @include lgScreen_1110
+//             display: unset !important
+    // .navbar-collapse
+    //     @include lgScreen
+    //         display: unset !important
+    //     @include lgScreen_1110
+    //         display: flex !important
 
 // nav li
 .nav
@@ -111,8 +131,11 @@
         .navbar
             &-toggler
                 border-color: transparent
+                @include lgScreen
+//                     display: unset
+//                 @include lgScreen_1110
+//                     display: none
     
-
 // dropdown           
 .dropdown
     &-menu

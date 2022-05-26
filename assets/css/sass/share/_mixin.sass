@@ -10,6 +10,11 @@
 @mixin lgScreen
     @media (min-width: 992px)
         @content
+        // 1110 menu 專用 ↓↓↓↓↓
+@mixin lgScreen_1110
+    @media (min-width: 1110px)
+        @content
+// 1110 menu 專用 ↑↑↑↑↑
 @mixin xlScreen
     @media (min-width: 1200px)
         @content
@@ -44,8 +49,3 @@
 
 @mixin default_animation
     transition: all .3s ease-out
-    
-    
-    
-    
-    
