@@ -3485,6 +3485,7 @@ svg.defs-only {
 
 .freshmanSect {
   padding-bottom: 40px;
+  overflow: hidden;
 }
 
 @media (min-width: 576px) {
