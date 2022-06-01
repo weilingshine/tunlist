@@ -53,21 +53,27 @@
         font-weight: $font_weight_700
         color: $color_blue_second
         @include mdScreen
-            font-size: 32px
-
-        span
-            color: $color_red
-            font-weight: $font_weight_700
-            padding-right: 10px
-            @include mdScreen  
-        + p
-            font-size: 18px
-            color: $color_text_gray
-            @include mdScreen
-                font-size: 22px
-            span
-                margin-top: 6px
-                display: inline-block
+            font-size: 32px 
+// 新增系所標題連結,並移除舊有設定
+.title
+    &__id
+        color: $color_red
+        font-weight: $font_weight_700
+        padding-right: 10px
+    &__school
+        font-weight: $font_weight_700
+        color: $color_blue_second
+        padding-right: 10px
+        
+    &__department
+        font-weight: $font_weight_700
+        color: $color_blue_second
+a.title__school
+    &:hover
+        text-decoration: underline
+        color: $color_blue_second
+    
+// 設定
 .title
     &__default
         font-size: 18px

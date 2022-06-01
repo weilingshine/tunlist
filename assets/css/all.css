@@ -326,26 +326,26 @@ body {
   }
 }
 
-.titleBox h3 span {
+.title__id {
   color: #f75454;
   font-weight: 700;
   padding-right: 10px;
 }
 
-.titleBox h3 + p {
-  font-size: 18px;
-  color: #7f7f7f;
+.title__school {
+  font-weight: 700;
+  color: #76bfff;
+  padding-right: 10px;
 }
 
-@media (min-width: 768px) {
-  .titleBox h3 + p {
-    font-size: 22px;
-  }
+.title__department {
+  font-weight: 700;
+  color: #76bfff;
 }
 
-.titleBox h3 + p span {
-  margin-top: 6px;
-  display: inline-block;
+a.title__school:hover {
+  text-decoration: underline;
+  color: #76bfff;
 }
 
 .title__default {
