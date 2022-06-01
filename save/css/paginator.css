@@ -1,0 +1,92 @@
+.paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paginator__select {
+  font-size: 17px;
+  line-height: 17px;
+  width: 120px;
+  padding: 11px 15px 15px;
+  border: unset;
+  color: #051d5d;
+  margin: 0 4px;
+  background: url("../img/icon_arrow_down.svg") no-repeat #e5f6ff;
+  background-position: right center;
+  background-size: 30px 11px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.paginator__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 17px;
+  line-height: 17px;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 12px 15px;
+  border: none;
+  color: #051d5d;
+  background: #ffffff;
+}
+
+.paginator__btn-next, .paginator__btn-prev {
+  position: relative;
+}
+
+.paginator__btn-next::after, .paginator__btn-prev::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.paginator__btn-next {
+  padding: 10px 20px 15px 12px;
+}
+
+.paginator__btn-next::after {
+  right: 0;
+  background: url("../img/main/icon_arrow_next.svg") no-repeat;
+  background-origin: 2px right;
+}
+
+.paginator__btn-prev {
+  padding: 10px 12px 15px 20px;
+}
+
+.paginator__btn-prev::after {
+  left: 0;
+  background: url("../img/main/icon_arrow_prev.svg") no-repeat;
+  background-origin: center left;
+}
+/*# sourceMappingURL=paginator.css.map */
