@@ -1960,8 +1960,6 @@ section.tunlistSect_inner {
 .detail__school-name {
   width: 100%;
   padding-left: 32px;
-  font-size: 18px;
-  color: #051d5d;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1970,17 +1968,31 @@ section.tunlistSect_inner {
 @media (min-width: 576px) {
   .detail__school-name {
     padding-left: 35px;
+  }
+}
+
+.detail__school-name:hover {
+  color: #051d5d;
+}
+
+.detail__school-name h3 {
+  font-size: 18px;
+  color: #051d5d;
+}
+
+@media (min-width: 576px) {
+  .detail__school-name h3 {
     font-size: 20px;
   }
 }
 
-.detail__school-name span {
+.detail__school-name h3 span {
   display: block;
 }
 
 @media (min-width: 425px) {
-  .detail__school-name span {
-    display: inline-block;
+  .detail__school-name h3 span {
+    display: unset;
     margin-right: 5px;
   }
 }

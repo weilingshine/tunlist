@@ -61,21 +61,40 @@
                     padding-bottom: 4px
                     margin-bottom: 3px
                     @include smScreen
+        //detail__school-name 未加 a 連結的設定
+        // &-name
+        //     width: 100%
+        //     padding-left: 32px
+        //     font-size: 18px
+        //     color: $color_blue_dark
+        //     flex-grow: 1
+        //     @include smScreen
+        //         padding-left: 35px
+        //         font-size: 20px
+        //     span
+        //         display: block
+        //         @include xsScreen
+        //             display: inline-block
+        //             margin-right: 5px
+        // detail__school-name 轉為 a 連結設定
         &-name
             width: 100%
             padding-left: 32px
-            font-size: 18px
-            color: $color_blue_dark
             flex-grow: 1
             @include smScreen
                 padding-left: 35px
-                font-size: 20px
-            span
-                display: block
-                @include xsScreen
-                    display: inline-block
-                    margin-right: 5px
-                // margin-right: 10px
+            &:hover
+                color: $color_blue_dark
+            h3
+                font-size: 18px
+                color: $color_blue_dark
+                @include smScreen
+                    font-size: 20px
+                span
+                    display: block
+                    @include xsScreen
+                        display: unset
+                        margin-right: 5px
         &-btn
             display: flex
             justify-content: center
