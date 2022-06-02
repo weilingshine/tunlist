@@ -1,0 +1,66 @@
+.page_link
+    position: relative
+    display: block
+    padding: 11px 15px 14px
+    margin: 0 4px
+    line-height: 1.25
+    font-size: 17px
+    color: $color_blue_dark
+    background: $color_paginator
+    text-decoration: none
+    border-radius: 8px
+    +default_animation
+
+    &:hover
+        z-index: 2
+        color: $color_white
+        text-decoration: none
+        background: $color_main_blue
+
+    &:focus
+        z-index: 3
+        color: $color_white
+        background-color: $color_blue_dark
+
+.page-item
+    &:first-child
+        .page_link
+            background: unset
+            &::before
+                margin-right: 8px
+                padding-left: 10px
+                content: ''
+                background: url('../img/main/icon_arrow_prev.svg') no-repeat center right
+                background-size: 10px
+                +default_animation
+            &:hover
+                background: $color_white
+                color: $color_main_blue
+                &::before
+                    background: url('../img/main/icon_arrow_prev_light.svg') no-repeat center right
+
+    &:last-child
+        .page_link
+            background: unset
+            &::after
+                margin-left: 8px
+                padding-right: 10px
+                content: ''
+                background: url('../img/main/icon_arrow_next.svg') no-repeat center left
+                background-size: 10px
+                +default_animation
+            &:hover
+                background: $color_white
+                color: $color_main_blue
+                &::after
+                    background: url('../img/main/icon_arrow_next_light.svg') no-repeat center left
+                    
+    &.active .page_link
+        z-index: 3
+        color: $color_white
+        background-color: $color_blue_dark
+
+    &.disabled .page_link
+        pointer-events: none
+        cursor: autos
+        opacity: .2

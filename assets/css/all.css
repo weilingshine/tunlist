@@ -496,6 +496,92 @@ a.title__school:hover {
   background-origin: center left;
 }
 
+.page_link {
+  position: relative;
+  display: block;
+  padding: 11px 15px 14px;
+  margin: 0 4px;
+  line-height: 1.25;
+  font-size: 17px;
+  color: #051d5d;
+  background: #e5f6ff;
+  text-decoration: none;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.page_link:hover {
+  z-index: 2;
+  color: #ffffff;
+  text-decoration: none;
+  background: #5bb2fe;
+}
+
+.page_link:focus {
+  z-index: 3;
+  color: #ffffff;
+  background-color: #051d5d;
+}
+
+.page-item:first-child .page_link {
+  background: unset;
+}
+
+.page-item:first-child .page_link::before {
+  margin-right: 8px;
+  padding-left: 10px;
+  content: '';
+  background: url("../img/main/icon_arrow_prev.svg") no-repeat center right;
+  background-size: 10px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.page-item:first-child .page_link:hover {
+  background: #ffffff;
+  color: #5bb2fe;
+}
+
+.page-item:first-child .page_link:hover::before {
+  background: url("../img/main/icon_arrow_prev_light.svg") no-repeat center right;
+}
+
+.page-item:last-child .page_link {
+  background: unset;
+}
+
+.page-item:last-child .page_link::after {
+  margin-left: 8px;
+  padding-right: 10px;
+  content: '';
+  background: url("../img/main/icon_arrow_next.svg") no-repeat center left;
+  background-size: 10px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.page-item:last-child .page_link:hover {
+  background: #ffffff;
+  color: #5bb2fe;
+}
+
+.page-item:last-child .page_link:hover::after {
+  background: url("../img/main/icon_arrow_next_light.svg") no-repeat center left;
+}
+
+.page-item.active .page_link {
+  z-index: 3;
+  color: #ffffff;
+  background-color: #051d5d;
+}
+
+.page-item.disabled .page_link {
+  pointer-events: none;
+  cursor: autos;
+  opacity: .2;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
