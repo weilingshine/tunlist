@@ -582,6 +582,26 @@ a.title__school:hover {
   opacity: .2;
 }
 
+.btn__sm-text {
+  padding: 5px 14px 7px;
+  font-size: 17px;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 50px;
+  color: #76bfff;
+  background: #ffffff;
+  border: 2px solid #e4f2ff;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.btn__sm-text:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #76bfff;
+  border: 2px solid transparent;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,6 +775,17 @@ footer {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
+}
+
+@media (min-width: 1400px) {
+  .headBox__mt-change-wide.container {
+    max-width: 1340px;
+  }
+}
+
+.headBox__mt-change-wide + .tunlist__headBox,
+.headBox__mt-change + .detail__headBox {
+  margin-top: 12px;
 }
 
 section.tunlistSect {
