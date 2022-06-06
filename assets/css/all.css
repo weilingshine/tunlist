@@ -2593,6 +2593,7 @@ section.tunlistSect_inner {
 @media (min-width: 768px) {
   .result__container {
     padding: 70px 35px 75px;
+    margin: 12px auto 0;
   }
 }
 
