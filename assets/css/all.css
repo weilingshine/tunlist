@@ -525,7 +525,7 @@ a.title__school:hover {
 }
 
 .page-item:first-child .page_link {
-  background: unset;
+  background: transparent;
 }
 
 .page-item:first-child .page_link::before {
@@ -539,7 +539,6 @@ a.title__school:hover {
 }
 
 .page-item:first-child .page_link:hover {
-  background: #ffffff;
   color: #5bb2fe;
 }
 
@@ -547,8 +546,16 @@ a.title__school:hover {
   background: url("../img/main/icon_arrow_prev_light.svg") no-repeat center right;
 }
 
+.page-item:first-child .page_link:focus {
+  color: #051d5d;
+}
+
+.page-item:first-child .page_link:focus::before {
+  background: url("../img/main/icon_arrow_prev.svg") no-repeat center right;
+}
+
 .page-item:last-child .page_link {
-  background: unset;
+  background: transparent;
 }
 
 .page-item:last-child .page_link::after {
@@ -562,12 +569,19 @@ a.title__school:hover {
 }
 
 .page-item:last-child .page_link:hover {
-  background: #ffffff;
   color: #5bb2fe;
 }
 
 .page-item:last-child .page_link:hover::after {
   background: url("../img/main/icon_arrow_next_light.svg") no-repeat center left;
+}
+
+.page-item:last-child .page_link:focus {
+  color: #051d5d;
+}
+
+.page-item:last-child .page_link:focus::after {
+  background: url("../img/main/icon_arrow_next.svg") no-repeat center left;
 }
 
 .page-item.active .page_link {
