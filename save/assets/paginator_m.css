@@ -18,7 +18,7 @@
   border: unset;
   color: #051d5d;
   margin: 0 4px;
-  background: url("../img/icon_arrow_down.svg") no-repeat #e5f6ff;
+  background: url("../assets/img/icon_arrow_down.svg") no-repeat #e5f6ff;
   background-position: right center;
   background-size: 30px 11px;
   -webkit-appearance: none;
@@ -76,7 +76,7 @@
 
 .paginator__btn-next::after {
   right: 0;
-  background: url("../img/main/icon_arrow_next.svg") no-repeat;
+  background: url("../assets/img/icon_arrow_next.svg") no-repeat;
   background-origin: 2px right;
 }
 
@@ -86,7 +86,7 @@
 
 .paginator__btn-prev::after {
   left: 0;
-  background: url("../img/main/icon_arrow_prev.svg") no-repeat;
+  background: url("../assets/img/icon_arrow_prev.svg") no-repeat;
   background-origin: center left;
 }
-/*# sourceMappingURL=paginator.css.map */
+/*# sourceMappingURL=paginator_m.css.map */
