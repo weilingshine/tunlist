@@ -507,6 +507,8 @@ a.title__school:hover {
   background: #e5f6ff;
   text-decoration: none;
   border-radius: 8px;
+  outline: none;
+  border: none;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
