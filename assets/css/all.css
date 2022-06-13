@@ -3959,6 +3959,7 @@ svg.defs-only {
   padding: 40px 0 60px;
   background: #eeeeee;
   text-align: center;
+  margin-bottom: 1px;
 }
 
 @media (min-width: 768px) {
