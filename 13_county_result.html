@@ -236,45 +236,63 @@
                 </ul>
             </article>
         </section>
-         <!-- paginator m-->
-         <nav class="paginator d-lg-none d-xl-none">
-            <div class="paginator__left">
-                <button class="paginator__btn paginator__btn-prev "> 上一頁 </button>
-            </div>
-            <select class="paginator__select">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select> 
-            <div class="paginator__right">
-                <button class="paginator__btn paginator__btn-next"> 下一頁 </button>
-            </div>
+        <!-- paginator m-->
+        <nav aria-label="Page navigation" class="paginator_mb d-lg-none d-xl-none">
+            <ul class="pagination justify-content-center">
+                <li class="page_item disabled"><button class="page_link"></button></li>
+                <li class="page_item disabled"><button class="page_link">上一頁</button></li>
+                <li class="page_item active">
+                    <select class="page_select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select> 
+                </li>
+                <li class="page_item"><button class="page_link">下一頁</button></li>
+                <li class="page_item"><button class="page_link"></button></li>
+                <li class="page_item">
+                    <div class="input_group">
+                        <input type="text" class="form_control" placeholder="欲前往頁數" aria-label="欲前往頁數">
+                        <div class="input_group_append">
+                            <button class="page_link"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="page_total">第&nbsp;1&nbsp;頁&nbsp;/&nbsp;共&nbsp;1111&nbsp;頁</p>
         </nav>
         <!-- paginator pc-->
         <nav aria-label="Page navigation" class="paginator_pc d-none d-lg-block">
             <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <button class="page_link">上一頁</button>
-                </li>
-                <li class="page-item active"><button class="page_link">1</button></li>
-                <li class="page-item"><button class="page_link">2</button></li>
-                <li class="page-item"><button class="page_link">3</button></li>
-                <li class="page-item"><button class="page_link">4</button></li>
-                <li class="page-item"><button class="page_link">5</button></li>
-                <li class="page-item"><button class="page_link">6</button></li>
-                <li class="page-item"><button class="page_link">7</button></li>
-                <li class="page-item"><button class="page_link">8</button></li>
-                <li class="page-item"><button class="page_link">9</button></li>
-                <li class="page-item"><button class="page_link">10</button></li>
-                <li class="page-item">
-                    <button class="page_link">下一頁</button>
+                <li class="page_item disabled"><button class="page_link"></button></li>
+                <li class="page_item disabled"><button class="page_link">上一頁</button></li>
+                <li class="page_item active"><button class="page_link">1</button></li>
+                <li class="page_item"><button class="page_link">2</button></li>
+                <li class="page_item"><button class="page_link">3</button></li>
+                <li class="page_item"><button class="page_link">4</button></li>
+                <li class="page_item"><button class="page_link">5</button></li>
+                <li class="page_item"><button class="page_link">6</button></li>
+                <li class="page_item"><button class="page_link">7</button></li>
+                <li class="page_item"><button class="page_link">8</button></li>
+                <li class="page_item"><button class="page_link">9</button></li>
+                <li class="page_item"><button class="page_link">10</button></li>
+                <li class="page_item"><button class="page_link">下一頁</button></li>
+                <li class="page_item"><button class="page_link"></button></li>
+                <li class="page_item">
+                    <div class="input_group">
+                        <input type="text" class="form_control" placeholder="欲前往頁數" aria-label="欲前往頁數">
+                        <div class="input_group_append">
+                            <button class="page_link"></button>
+                        </div>
+                    </div>
                 </li>
             </ul>
+            <p class="page_total">第&nbsp;1&nbsp;頁&nbsp;/&nbsp;共&nbsp;1111&nbsp;頁</p>
         </nav>
         <div class="area__btnBox">
             <a href="#" class="area__btn-back">返回查詢</a>
