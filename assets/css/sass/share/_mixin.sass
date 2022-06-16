@@ -13,7 +13,7 @@
 @mixin lgScreen
     @media (min-width: 992px)
         @content
-        // 1110 menu 專用 ↓↓↓↓↓
+// 1110 menu 專用 ↓↓↓↓↓
 @mixin lgScreen_1110
     @media (min-width: 1110px)
         @content
@@ -27,6 +27,11 @@
 @mixin xxxlScreen
     @media (min-width: 1920px)
         @content
+// max 410 p14 新鮮人懶人包 part time 專用 ↓↓↓↓↓       
+@mixin max_410
+    @media (max-width: 410px)
+        @content
+// max 410 p14 新鮮人懶人包 part time 專用 ↑↑↑↑↑
 
 // keyframes mixin
 =keyframes($name)

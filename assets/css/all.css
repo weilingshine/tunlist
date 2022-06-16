@@ -4187,6 +4187,136 @@ svg.defs-only {
   }
 }
 
+.parttimeSect {
+  background: #72cbbe;
+  padding: 55px 0 40px;
+}
+
+.parttime__list {
+  margin: 0 15px;
+}
+
+.parttime__title {
+  font-size: 18px;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 12px;
+  color: #fff;
+  border-top: 1px solid #bce0db;
+}
+
+.parttime__title-img {
+  width: 20px;
+  margin-right: 5px;
+  margin-left: 8px;
+}
+
+.parttime__box {
+  background: #ffffff;
+  display: flow-root;
+  padding: 25px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.parttime__box .parttime_nodata {
+  color: #f75454;
+  font-size: 16px;
+  text-align: center;
+}
+
+.parttime__text-work {
+  float: left;
+  width: 50%;
+}
+
+@media (max-width: 410px) {
+  .parttime__text-work {
+    float: left;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #ced4da;
+  }
+}
+
+.parttime__text-work h4 {
+  color: #333;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.parttime__text-work span {
+  font-size: 13px;
+  color: #72cbbe;
+  padding-top: 3px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.parttime__pay {
+  float: left;
+  font-size: 15px;
+  width: 25%;
+  margin: 6px 15px;
+  padding: 4px 0;
+  text-align: center;
+  border-right: 1px solid #ced4da;
+  border-left: 1px solid #ced4da;
+}
+
+@media (max-width: 410px) {
+  .parttime__pay {
+    width: auto;
+    margin: 0;
+    border-right: 0 solid #ced4da;
+    border-left: 0 solid #ced4da;
+    float: left;
+    font-size: 15px;
+    padding: 7px 0;
+  }
+}
+
+.parttime__btn {
+  margin: 4px auto;
+  max-width: 80px;
+  color: #f75454;
+  border: 2px solid #f75454;
+  padding: 3px 14px 3px;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 15%;
+  display: block;
+  font-size: 14px;
+}
+
+@media (max-width: 410px) {
+  .parttime__btn {
+    width: auto;
+    margin: 3px 0 0;
+    padding: 3px 15px 3px;
+    float: right;
+    font-size: 14px;
+  }
+}
+
+.parttime__more-btn {
+  background: #fff45c;
+  color: #19a28e;
+  border-radius: 4px;
+  padding: 3px 14px 3px;
+  border: 2px solid #fff45c;
+  margin: 0 auto;
+  display: block;
+}
+
 .promoteSect {
   margin: 50px 0 0;
   padding: 50px 0 60px;
