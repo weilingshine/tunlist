@@ -1,3 +1,6 @@
+@mixin xxsScreen
+    @media (min-width: 375px)
+        @content
 @mixin xsScreen
     @media (min-width: 425px)
         @content    
@@ -24,7 +27,6 @@
 @mixin xxxlScreen
     @media (min-width: 1920px)
         @content
-//單一物件適用
 
 // keyframes mixin
 =keyframes($name)
@@ -39,6 +41,7 @@
 
 @mixin text_shadow
     text-shadow: 0 0 10px rgba(0, 0, 0, .15)
+
 @mixin box_shadow
     box-shadow: 0 0 10px rgba(0, 0, 0, .15)
 
