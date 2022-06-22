@@ -4654,4 +4654,75 @@ svg.defs-only {
     margin-top: 48px;
   }
 }
+
+.tunlistSect.vtech .tunlist__headBox .tunlist__head-list {
+  background: #76cdc0;
+}
+
+.tunlistSect.vtech .tunlist__contentBox .tunlist__list {
+  background: #e2f4f2;
+}
+
+@media (min-width: 576px) {
+  .tunlistSect.vtech .tunlist__contentBox .tunlist__list {
+    background: unset;
+  }
+  .tunlistSect.vtech .tunlist__contentBox .tunlist__list:nth-child(even) {
+    background: #e2f4f2;
+  }
+}
+
+@media (min-width: 576px) and (min-width: 992px) {
+  .tunlistSect.vtech .tunlist__contentBox .tunlist__list:nth-child(even) {
+    background: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .tunlistSect.vtech .tunlist__contentBox .tunlist__list:hover {
+    background: #e2f4f2;
+  }
+}
+
+.tunlistSect.vtech .tunlist__contentBox .tunlist__btn {
+  background: #6fcabd;
+}
+
+.tunlistSect.vtech .tunlist__contentBox .tunlist__btn:hover {
+  color: #6fcabd;
+  background: #ffffff;
+}
+
+.tunlistSect.vtech .detail__headBox .detail__head-list {
+  background: #76cdc0;
+}
+
+.tunlistSect.vtech .detail__contentBox .detail__list {
+  background: #e2f4f2;
+}
+
+@media (min-width: 576px) {
+  .tunlistSect.vtech .detail__contentBox .detail__list {
+    background: unset;
+  }
+  .tunlistSect.vtech .detail__contentBox .detail__list:nth-child(even) {
+    background: #e2f4f2;
+  }
+}
+
+@media (min-width: 768px) {
+  .tunlistSect.vtech .detail__contentBox .detail__list:nth-child(odd) .detail__school-list:hover {
+    background: #e2f4f2;
+  }
+}
+
+.tunlistSect.vtech .detail__contentBox .detail__list .detail__school-list:not(:last-child) {
+  border-bottom: 1px solid #e2f4f2;
+}
+
+@media (min-width: 576px) {
+  .tunlistSect.vtech .detail__contentBox .detail__list .detail__school-list:not(:last-child) {
+    border-bottom: unset;
+  }
+}
 /*# sourceMappingURL=all.css.map */

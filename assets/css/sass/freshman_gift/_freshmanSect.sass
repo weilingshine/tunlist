@@ -31,7 +31,7 @@
                 margin-left: 16px
                 width: 120px
                 color: $color_red
-                // color: $color_main
+                // color: $color_school_main
                 &::placeholder
                     color: $color_text_gray
                 @include xsScreen
@@ -63,11 +63,11 @@
             position: absolute
             display: none
         input[type="radio"]:checked ~  label .freshman__check
-            border: 1px solid $color_main
+            border: 1px solid $color_school_main
         input[type="radio"]:checked ~  label .freshman__check::before
-            background: $color_main  url('../img/main/icon_check.svg') 
+            background: $color_school_main  url('../img/main/icon_check.svg') 
         input[type="radio"]:checked ~ label
-            color: $color_main
+            color: $color_school_main
     .form-check-label
         display: block
         position: relative

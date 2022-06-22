@@ -41,7 +41,7 @@ section.tunlistSect
             +default_animation
             @include smScreen
                 display: flex 
-                background: $color_blue_second
+                background: $color_sys_second
                 padding: 10px 15px 11px 20px
                 border-radius: 4px
                 margin: 0 2px
@@ -105,7 +105,7 @@ section.tunlistSect
         align-content: space-between
         margin: 3px 3px
         padding: 10px 8px 10px 8px
-        background: $color_blue_bg
+        background: $color_sys_bg
         border-radius: 8px
         +default_animation
         @include xsScreen
@@ -119,18 +119,17 @@ section.tunlistSect
             margin: 0 2px
             flex-wrap: nowrap
             &:nth-child(even)
-                background: $color_blue_bg
+                background: $color_sys_bg
                 border-radius: 4px
                 @include lgScreen
                     background: unset
-
         @include lgScreen
             width: calc( 50% - 4px ) 
         @include xxlScreen
             width: calc( 33.33333% - 4px )
         &:hover
             @include lgScreen
-                background: $color_blue_bg
+                background: $color_sys_bg
                 border-radius: 100px
     &__top
         display: flex
@@ -311,7 +310,7 @@ section.tunlistSect
         line-height: 1
         color: $color_white
         padding: 5px 20px 7px
-        background: $color_main_blue
+        background: $color_sys_main
         border-radius: 50px
         border: 0
         +default_animation
@@ -321,7 +320,7 @@ section.tunlistSect
             padding: 5px 0 7px
         &:hover
             background: $color_white
-            color: $color_main_blue
+            color: $color_sys_main
 // .container
 //     padding-right: 15px
 //     padding-left: 15px 

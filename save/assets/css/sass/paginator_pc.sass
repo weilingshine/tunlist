@@ -1,7 +1,7 @@
 $color_paginator: #e5f6ff
 $color_blue_dark: #051d5d
 $color_white: #ffffff
-$color_main_blue: #5bb2fe
+$color_sys_main: #5bb2fe
 
 @mixin default_animation
     transition: all .3s ease-out
@@ -23,7 +23,7 @@ $color_main_blue: #5bb2fe
         z-index: 2
         color: $color_white
         text-decoration: none
-        background: $color_main_blue
+        background: $color_sys_main
 
     &:focus
         z-index: 3
@@ -42,7 +42,7 @@ $color_main_blue: #5bb2fe
                 background-size: 10px
                 +default_animation
             &:hover
-                color: $color_main_blue
+                color: $color_sys_main
                 &::before
                     background: url('../img/main/icon_arrow_prev_light.svg') no-repeat center right
             &:focus
@@ -61,7 +61,7 @@ $color_main_blue: #5bb2fe
                 background-size: 10px
                 +default_animation
             &:hover
-                color: $color_main_blue
+                color: $color_sys_main
                 &::after
                     background: url('../img/main/icon_arrow_next_light.svg') no-repeat center left
             &:focus
