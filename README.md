@@ -15,4 +15,7 @@
 * [12_考區查詢___依試場查詢](https://weilingshine.github.io/tunlist/12_exame_number.html)
 * [13_考區查詢___查詢榜單](https://weilingshine.github.io/tunlist/13_county_result.html)
 * [14_放榜服務懶人包](https://weilingshine.github.io/tunlist/14_freshman_gift.html)
+* [15_統測甄選首頁](https://weilingshine.github.io/tunlist/15_universityoftechnology.html)
+* [16_統測甄選__系所頁](https://weilingshine.github.io/tunlist/16_department.html)
+* [17_統測甄選__榜單頁](https://weilingshine.github.io/tunlist/17_result.html)
 * [demo toggle](https://weilingshine.github.io/tunlist/demo.html)
