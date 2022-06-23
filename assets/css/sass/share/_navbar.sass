@@ -6,6 +6,7 @@
     @include lgScreen
         flex-flow: row nowrap
         justify-content: flex-start
+
     .container
         max-width: 100%
         padding-right: 0
@@ -36,6 +37,7 @@
         @include lgScreen
             border-top: 0
             padding: 0 1rem 0 0
+
 .navbar-expand-lg
     .navbar-nav
         .nav-item
@@ -43,24 +45,7 @@
                 .nav-link
                     @include lgScreen
                         padding-right: 0
-            // &:nth-child(3)
-            //     .dropdown-menu
-            //         @include lgScreen
-            //             left: -35px                        
-            // &:nth-child(4)
-            //     .dropdown-menu
-            //         @include lgScreen
-            //             left: -16px
-            &:last-child
-                .dropdown-menu
-                    @include lgScreen
-                        left: -75px
-                        &::before
-                            left: 52%
-                    @include xlScreen
-                        left: -68px
-                    @include xxlScreen
-                        left: -40px   
+
         .nav-link
             @include lgScreen
                 padding-right: .5rem
@@ -70,10 +55,13 @@
                 font-size: 19px
                 padding-right: 1rem
                 padding-left:  1rem
+                
         .dropdown
             &-menu
                 @include lgScreen
                     top: 2.25rem
+                    left: 50%
+                    transform: translateX(-50%)
                     +box_shadow
                     min-width: 11.25rem
                     &::before
@@ -92,24 +80,22 @@
                 &:focus
                     color: $color_blue_dark
                     background-color: #e9ecef
-// .navbar-expand-lg 
-//     .navbar-nav
-//         @include lgScreen
-//             flex-direction: column
-//         @include lgScreen_1110
-//             flex-direction: row
-        
-
-//     .collapse.navbar-collapse
-//         @include lgScreen
-//             display: none !important
-//         @include lgScreen_1110
-//             display: unset !important
-    // .navbar-collapse
-    //     @include lgScreen
-    //         display: unset !important
-    //     @include lgScreen_1110
-    //         display: flex !important
+// 線上版本
+// 00_phased_rollout_menu.html 設定 ↓↓↓↓↓
+.navbar-expand-lg
+    .navbar-nav
+        .nav-item
+            &:last-child
+                .dropdown-menu
+                    @include lgScreen
+                        left: 30%
+                        &::before
+                            left: 39%
+                    @include xlScreen
+                        left: 50%
+                        &::before
+                            left: 50%
+// 00_phased_rollout_menu.html 設定 ↑↑↑↑↑
 
 // nav li
 .nav
@@ -117,6 +103,7 @@
         @include lgScreen
             &:not(:last-child)
                 border-right: 1px solid $color_white
+                
     &-link
         padding: 0.625rem 1rem
         color: $color_white !important
@@ -130,10 +117,6 @@
         .navbar
             &-toggler
                 border-color: transparent
-                // @include lgScreen
-//                     display: unset
-//                 @include lgScreen_1110
-//                     display: none
     
 // dropdown           
 .dropdown
@@ -143,8 +126,8 @@
         margin: 0 auto
         border-radius: $radius_navbar
         border: 0
+
     &-item
         padding: 0.625rem 1rem
         +navbar_txt
         color: $color_blue_dark
-// navbar-expand-lg
