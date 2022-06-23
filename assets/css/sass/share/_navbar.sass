@@ -98,6 +98,18 @@
                             left: 50%
 // 00_phased_rollout_menu.html 設定 ↑↑↑↑↑
 
+// 完整版本
+// 00_final_release_menu.html設定 ↓↓↓↓↓
+.navbar-expand-lg 
+    .navbar-nav 
+        .nav-item:last-child
+            #navbarDropdown_submenu
+                + .dropdown-menu
+                    left: 18%
+                    &::before
+                        left: 50%
+// 00_final_release_menu.html設定 ↑↑↑↑↑
+
 // nav li
 .nav
     &-item
