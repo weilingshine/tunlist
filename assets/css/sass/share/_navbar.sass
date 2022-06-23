@@ -47,10 +47,11 @@
                         padding-right: 0
 
         .nav-link
-            @include lgScreen
-                padding-right: .5rem
-                padding-left: .5rem
-                font-size: unset
+            // 宣單過多，992~1200 間的設定
+            // @include lgScreen
+            //     padding-right: .5rem
+            //     padding-left: .5rem
+            //     font-size: unset
             @include xlScreen
                 font-size: 19px
                 padding-right: 1rem
@@ -90,7 +91,7 @@
                     @include lgScreen
                         left: 30%
                         &::before
-                            left: 39%
+                            left: 36.5%
                     @include xlScreen
                         left: 50%
                         &::before
