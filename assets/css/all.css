@@ -183,6 +183,15 @@ body {
   }
 }
 
+.new_link {
+  color: #ffeb3b !important;
+}
+
+.new_link img {
+  width: 40px;
+  margin-left: 2px;
+}
+
 .navbar-light .navbar-toggler {
   border-color: transparent;
 }
