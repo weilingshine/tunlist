@@ -1,6 +1,7 @@
 # tunlist
 放榜服務切版
 
+切版預覽位置:
 * [00_Menu_在線版本](https://weilingshine.github.io/tunlist/00_phased_rollout_menu.html)
 * [00_Menu大_完整版本](https://weilingshine.github.io/tunlist/00_final_release_menu.html)
 * [01_大學查詢首頁](https://weilingshine.github.io/tunlist/01_index.html)
