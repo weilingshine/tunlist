@@ -2494,6 +2494,16 @@ section.tunlistSect_inner {
   }
 }
 
+.titleBox + .searchBox {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .titleBox + .searchBox {
+    margin-top: 40px;
+  }
+}
+
 .searchBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2508,16 +2518,6 @@ section.tunlistSect_inner {
 @media (min-width: 425px) {
   .searchBox {
     margin: 0 30px;
-  }
-}
-
-.searchBox:not(:last-child) {
-  margin-top: 30px;
-}
-
-@media (min-width: 768px) {
-  .searchBox:not(:last-child) {
-    margin-top: 40px;
   }
 }
 
