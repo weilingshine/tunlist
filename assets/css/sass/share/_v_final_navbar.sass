@@ -47,11 +47,6 @@
                         padding-right: 0
 
         .nav-link
-            // 宣單過多，992~1200 間的設定
-            // @include lgScreen
-            //     padding-right: .5rem
-            //     padding-left: .5rem
-            //     font-size: unset
             @include xlScreen
                 font-size: 19px
                 padding-right: 1rem
@@ -60,12 +55,11 @@
         .dropdown
             &-menu
                 @include lgScreen
-                    text-align: left
                     top: 2.25rem
                     left: 50%
                     transform: translateX(-50%)
                     +box_shadow
-                    min-width: 15rem
+                    min-width: 11.25rem
                     &::before
                         position: absolute
                         border: solid transparent
@@ -90,9 +84,9 @@
             &:last-child
                 .dropdown-menu
                     @include lgScreen
-                        left: 19%
+                        left: 30%
                         &::before
-                            left: 45.3%
+                            left: 36.5%
                     @include xlScreen
                         left: 50%
                         &::before
@@ -130,27 +124,44 @@
     color: #ffeb3b !important
     img
         width: 40px
+        margin-bottom: 4px
         margin-left: 2px
+        animation: swing2 4s ease infinite
 
 .navbar
     &-light
         .navbar
             &-toggler
                 border-color: transparent
-    
+
 // dropdown           
 .dropdown
     &-menu
-        padding: 0.625rem 0
+        padding: 0.625rem 0 0.75rem
         width: 80%
         margin: 0 auto
         border-radius: $radius_navbar
         border: 0
+        
+    &_title
+        display: block
+        margin: 10px 26px 4px
+        padding-bottom: 2px
+        border-bottom: 1px solid
+        font-size: 17px
+        line-height: 1
+        text-align: center
+        color: $color_school_title
+        &:not(:first-child)
+            margin: 16px 26px 4px 
+        @include lgScreen
+            margin: 10px 26px 4px
+            padding-bottom: 2px
+            text-align: left
 
     &-item
-        padding: 0.625rem 1rem
+        padding: 0.25rem 26px
         +navbar_txt
         color: $color_blue_dark
         @include lgScreen
             text-align: left
-            padding-left: 36px
