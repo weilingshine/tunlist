@@ -189,7 +189,10 @@ body {
 
 .new_link img {
   width: 40px;
+  margin-bottom: 4px;
   margin-left: 2px;
+  -webkit-animation: swing2 4s ease infinite;
+          animation: swing2 4s ease infinite;
 }
 
 .navbar-light .navbar-toggler {
@@ -979,6 +982,98 @@ footer {
   100% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes swing2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  30% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  31% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  32% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  33% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  34% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  30% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  31% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  32% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  33% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  34% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes icon_menu_new {
+  0% {
+    fill: #D6343C;
+  }
+  5% {
+    fill: #ffeb3b;
+  }
+  10% {
+    fill: #D6343C;
+  }
+  100% {
+    fill: #D6343C;
+  }
+}
+
+@keyframes icon_menu_new {
+  0% {
+    fill: #D6343C;
+  }
+  5% {
+    fill: #ffeb3b;
+  }
+  10% {
+    fill: #D6343C;
+  }
+  100% {
+    fill: #D6343C;
   }
 }
 

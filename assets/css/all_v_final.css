@@ -990,6 +990,98 @@ footer {
   }
 }
 
+@-webkit-keyframes swing2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  30% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  31% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  32% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  33% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  34% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  30% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  31% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  32% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  33% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  34% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes icon_menu_new {
+  0% {
+    fill: #D6343C;
+  }
+  5% {
+    fill: #ffeb3b;
+  }
+  10% {
+    fill: #D6343C;
+  }
+  100% {
+    fill: #D6343C;
+  }
+}
+
+@keyframes icon_menu_new {
+  0% {
+    fill: #D6343C;
+  }
+  5% {
+    fill: #ffeb3b;
+  }
+  10% {
+    fill: #D6343C;
+  }
+  100% {
+    fill: #D6343C;
+  }
+}
+
 @media (min-width: 1400px) {
   .headBox__mt-change-wide.container {
     max-width: 1340px;
@@ -2502,6 +2594,16 @@ section.tunlistSect_inner {
   }
 }
 
+.titleBox + .searchBox {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .titleBox + .searchBox {
+    margin-top: 40px;
+  }
+}
+
 .searchBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2516,16 +2618,6 @@ section.tunlistSect_inner {
 @media (min-width: 425px) {
   .searchBox {
     margin: 0 30px;
-  }
-}
-
-.searchBox:not(:last-child) {
-  margin-top: 30px;
-}
-
-@media (min-width: 768px) {
-  .searchBox:not(:last-child) {
-    margin-top: 40px;
   }
 }
 
