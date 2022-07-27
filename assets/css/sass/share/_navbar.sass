@@ -47,11 +47,6 @@
                         padding-right: 0
 
         .nav-link
-            // 宣單過多，992~1200 間的設定
-            // @include lgScreen
-            //     padding-right: .5rem
-            //     padding-left: .5rem
-            //     font-size: unset
             @include xlScreen
                 font-size: 19px
                 padding-right: 1rem
@@ -138,17 +133,35 @@
         .navbar
             &-toggler
                 border-color: transparent
-    
+
 // dropdown           
 .dropdown
     &-menu
-        padding: 0.625rem 0
+        padding: 0.625rem 0 0.75rem
         width: 80%
         margin: 0 auto
         border-radius: $radius_navbar
         border: 0
+        
+    &_title
+        display: block
+        margin: 10px 26px 4px
+        padding-bottom: 2px
+        border-bottom: 1px solid
+        font-size: 17px
+        line-height: 1
+        text-align: center
+        color: $color_school_title
+        &:not(:first-child)
+            margin: 16px 26px 4px 
+        @include lgScreen
+            margin: 10px 26px 4px
+            padding-bottom: 2px
+            text-align: left
 
     &-item
-        padding: 0.625rem 1rem
+        padding: 0.25rem 26px
         +navbar_txt
         color: $color_blue_dark
+        @include lgScreen
+            text-align: left
