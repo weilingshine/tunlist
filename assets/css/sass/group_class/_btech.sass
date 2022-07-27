@@ -1,0 +1,74 @@
+// // page 15 16
+.tunlistSect.btech
+    // 欄位表頭
+    .tunlist__headBox
+        .tunlist
+            &__head-list
+                background: $btech_color_second
+    // 欄位內容
+    .tunlist__contentBox
+        .tunlist
+            &__list
+                background: $btech_color_bg
+                @include smScreen
+                    background: unset
+                    &:nth-child(even)
+                        background: $btech_color_bg
+                        @include lgScreen
+                            background: unset
+                &:hover
+                    @include lgScreen
+                        background: $btech_color_bg
+            &__btn
+                background: $btech_color_main
+                &:hover
+                    color: $btech_color_main
+                    background: $color_white
+
+// page 17 19 22
+.tunlistSect.btech
+    .detail__headBox
+        .detail
+            &__head-list
+                background: $btech_color_second
+    .detail__contentBox
+        .detail
+            &__list
+                background: $btech_color_bg
+                @include smScreen
+                    background: unset
+                    &:nth-child(even)
+                        background: $btech_color_bg
+
+                &:nth-child(odd)  
+                    .detail
+                        &__school
+                            &-list
+                                &:hover
+                                    @include mdScreen
+                                        background: $btech_color_bg
+                .detail__school-list
+                    &:not(:last-child)
+                        border-bottom: 1px solid $btech_color_bg
+                        @include smScreen
+                            border-bottom: unset
+
+// page 18 21
+.tunlistSect.btech
+    .search
+        &__container
+            background: $btech_color_bg
+        &__btn
+            color: $color-white
+            background: $btech_color_main
+            &:active,
+            &:hover
+                color: $btech_color_main
+                background: $color_white
+                border: 3px solid $btech_color_bg
+
+// page 20 23
+.tunlistSect.btech
+    .result
+        &__container
+            background: $btech_color_bg
