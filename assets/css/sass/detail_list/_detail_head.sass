@@ -2,13 +2,14 @@
 .detail
     &__headBox
         display: none
+        padding-right: 15px
+        padding-left: 15px
+        color: $color_white
+        font-size: 18px
         @include smScreen
             display: block
-            
             padding-right: 30px
             padding-left: 30px
-            font-size: 18px
-            color: $color_white
             width: 100%
             margin-top: 35px
         @include xxlScreen
@@ -21,6 +22,7 @@
             max-width: 1140px
             justify-content: center
             +default_animation
+            list-style: none
             @include smScreen
                 list-style: none
             @include lgScreen
@@ -28,11 +30,11 @@
         &-list
             width: 100%
             +default_animation
+            padding: 13px 15px 13px 20px
+            border-radius: 4px
             @include smScreen
-                display: flex 
                 background: $color_sys_second
-                padding: 13px 15px 13px 20px
-                border-radius: 4px
+                display: flex 
                 // margin: 0 2px
                 font-size: 18px
         &-top

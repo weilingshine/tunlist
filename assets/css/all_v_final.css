@@ -1708,6 +1708,10 @@ section.tunlistSect_inner {
 
 .detail__headBox {
   display: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 @media (min-width: 576px) {
@@ -1715,8 +1719,6 @@ section.tunlistSect_inner {
     display: block;
     padding-right: 30px;
     padding-left: 30px;
-    font-size: 18px;
-    color: #ffffff;
     width: 100%;
     margin-top: 35px;
   }
@@ -1738,6 +1740,7 @@ section.tunlistSect_inner {
           justify-content: center;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+  list-style: none;
 }
 
 @media (min-width: 576px) {
@@ -1758,16 +1761,16 @@ section.tunlistSect_inner {
   width: 100%;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+  padding: 13px 15px 13px 20px;
+  border-radius: 4px;
 }
 
 @media (min-width: 576px) {
   .detail__head-list {
+    background: #76bfff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #76bfff;
-    padding: 13px 15px 13px 20px;
-    border-radius: 4px;
     font-size: 18px;
   }
 }
@@ -4929,6 +4932,25 @@ svg.defs-only {
   .tunlistSect.vtech .detail__contentBox .detail__list .detail__school-list:not(:last-child) {
     border-bottom: unset;
   }
+}
+
+.tunlistSect.vtech .search__container {
+  background: #e2f4f2;
+}
+
+.tunlistSect.vtech .search__btn {
+  color: #ffffff;
+  background: #6fcabd;
+}
+
+.tunlistSect.vtech .search__btn:active, .tunlistSect.vtech .search__btn:hover {
+  color: #6fcabd;
+  background: #ffffff;
+  border: 3px solid #e2f4f2;
+}
+
+.tunlistSect.vtech .result__container {
+  background: #e2f4f2;
 }
 
 .deptcodeSect {
