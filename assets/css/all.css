@@ -5206,9 +5206,22 @@ svg.defs-only {
   margin: 3px auto 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .tunlistSect.btech .area__contentBox {
-    margin: 11px auto 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .tunlistSect.btech .area__list {
+    width: calc( 25% - 10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .tunlistSect.btech .area__list {
+    width: calc( 20% - 10px);
   }
 }
 
@@ -5218,7 +5231,7 @@ svg.defs-only {
 }
 
 .tunlistSect.btech .area__btn:hover {
-  background: #8a94ee;
+  background: #e9ebfd;
 }
 
 @media (min-width: 576px) {
@@ -5257,14 +5270,12 @@ svg.defs-only {
 }
 
 .promotesmSect {
-  margin: 50px 0 0;
-  padding: 50px 0 60px;
+  padding: 40px 0 30px;
 }
 
 @media (min-width: 768px) {
   .promotesmSect {
-    margin: 80px 0 0;
-    padding: 70px 0 80px;
+    padding: 46px 0 30px;
   }
 }
 
@@ -5273,6 +5284,17 @@ svg.defs-only {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .promotesmSect .titleBox h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.promotesmSect .titleBox h2::after {
+  display: none;
 }
 
 .promotesmSect .titleBox h2 span {
@@ -5282,24 +5304,44 @@ svg.defs-only {
 @media (min-width: 576px) {
   .promotesmSect .container {
     max-width: unset;
-    padding-right: 30px;
-    padding-left: 30px;
   }
 }
 
 .promotesmSect .row:nth-child(1) {
-  margin: 40px 0 0;
-  padding: 2px 0 10px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 14px;
   background: #e4f2ff;
   border-radius: 4px;
 }
 
+@media (min-width: 576px) {
+  .promotesmSect .row:nth-child(1) {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
 @media (min-width: 768px) {
   .promotesmSect .row:nth-child(1) {
-    margin-top: 50px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 2px 0 10px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .promotesmSect .row:nth-child(1) {
+    padding-top: 13px;
+    padding-bottom: 26px;
+    border-radius: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotesmSect .row:nth-child(1) {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

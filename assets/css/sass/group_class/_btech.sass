@@ -83,12 +83,19 @@
     .area
         &__contentBox
             margin: 3px auto 0
+            @include xlScreen
+                padding-right: 0
+                padding-left: 0
+ 
+        &__list
             @include smScreen
-                margin: 11px auto 0
+                width: calc( 25% - 10px )
+            @include mdScreen
+                width: calc( 20% - 10px )
         &__btn
             padding: 9px 14px 7px
             background: $btech_color_bg
             &:hover
-                background: $btech_color_main
+                background: $btech_color_bg
             @include smScreen
                 padding: 18px 14px 16px
