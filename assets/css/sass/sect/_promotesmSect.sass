@@ -45,6 +45,27 @@
             justify-content: center
 
     .col-6
+        &:nth-child(1)
+            .promotesm__card-btn
+                &::after
+                    position: absolute
+                    content: ''
+                    background: url('../img/promote/icon_hot.svg') no-repeat
+                    z-index: 99
+                    width: 45px
+                    height: 42px
+                    right: -30px
+                    top: 42%
+                    transform: translateY(-58%)
+                    +default_animation
+                    @include mdScreen
+                        width: 55px
+                        height: 51px
+                        right: -34px
+                    @include lgScreen
+                        width: 70px
+                        height: 65px
+                        right: -44px
         @include xlScreen
             padding-right: 30px
             padding-left: 30px

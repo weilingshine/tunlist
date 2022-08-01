@@ -5351,6 +5351,35 @@ svg.defs-only {
           justify-content: center;
 }
 
+.promotesmSect .col-6:nth-child(1) .promotesm__card-btn::after {
+  position: absolute;
+  content: '';
+  background: url("../img/promote/icon_hot.svg") no-repeat;
+  z-index: 99;
+  width: 45px;
+  height: 42px;
+  right: -30px;
+  top: 42%;
+  -webkit-transform: translateY(-58%);
+          transform: translateY(-58%);
+}
+
+@media (min-width: 768px) {
+  .promotesmSect .col-6:nth-child(1) .promotesm__card-btn::after {
+    width: 55px;
+    height: 51px;
+    right: -34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .promotesmSect .col-6:nth-child(1) .promotesm__card-btn::after {
+    width: 70px;
+    height: 65px;
+    right: -44px;
+  }
+}
+
 @media (min-width: 1200px) {
   .promotesmSect .col-6 {
     padding-right: 30px;
