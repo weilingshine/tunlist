@@ -436,6 +436,19 @@ a.title__school:hover {
   }
 }
 
+.title__outline {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #7f7f7f;
+}
+
+@media (min-width: 768px) {
+  .title__outline {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+}
+
 .page_link {
   position: relative;
   display: block;
