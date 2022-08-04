@@ -78,8 +78,6 @@
     .detail
         &__headBox.btech
             display: block
-        &__head-top
-         width: 100%
     .area
         &__contentBox
             margin: 3px auto 0
@@ -99,3 +97,14 @@
                 background: $btech_color_bg
             @include smScreen
                 padding: 18px 14px 16px
+    .detail
+        &__head-bottom-before
+            padding-left: 10px
+
+        &__confirm
+            &::before
+                display: none
+        &__school-name
+            padding-left: 10px
+        &__top
+            padding: 0 0 0 0

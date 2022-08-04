@@ -5211,10 +5211,6 @@ svg.defs-only {
   display: block;
 }
 
-.tunlistSect.btech .detail__head-top {
-  width: 100%;
-}
-
 .tunlistSect.btech .area__contentBox {
   margin: 3px auto 0;
 }
@@ -5251,6 +5247,22 @@ svg.defs-only {
   .tunlistSect.btech .area__btn {
     padding: 18px 14px 16px;
   }
+}
+
+.tunlistSect.btech .detail__head-bottom-before {
+  padding-left: 10px;
+}
+
+.tunlistSect.btech .detail__confirm::before {
+  display: none;
+}
+
+.tunlistSect.btech .detail__school-name {
+  padding-left: 10px;
+}
+
+.tunlistSect.btech .detail__top {
+  padding: 0 0 0 0;
 }
 
 @media (min-width: 576px) {
