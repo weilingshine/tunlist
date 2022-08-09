@@ -794,6 +794,17 @@ a.title__school:hover {
 }
 
 .btn__sm-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
   padding: 5px 14px 7px;
   font-size: 17px;
   line-height: 1;
@@ -811,6 +822,20 @@ a.title__school:hover {
   color: #ffffff;
   background: #76bfff;
   border: 2px solid transparent;
+}
+
+.btn__sm-text .detail__school-btn {
+  margin: 1px 5px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.btn__sm-text .detail__school-btn img {
+  width: 5px;
+}
+
+.btn__sm-text:not(:first-child) {
+  margin-left: 10px;
 }
 
 footer {

@@ -1,4 +1,8 @@
 .btn__sm-text
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: nowrap
     padding: 5px 14px 7px
     font-size: 17px
     line-height: 1
@@ -13,3 +17,11 @@
         color: $color_white
         background: $color_sys_second
         border: 2px solid transparent
+    .detail__school-btn
+        margin: 1px 5px 0 0
+        width: 16px
+        height: 16px
+        img
+            width: 5px
+    &:not(:first-child)
+        margin-left: 10px
