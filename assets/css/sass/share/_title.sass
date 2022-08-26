@@ -77,14 +77,36 @@ a.title__school
     
 // 設定
 .title
+    &__group
+        @include smScreen
+            display: flex
+            justify-content: center
+            align-items: center
     &__default
         font-size: 18px
         color: $color_text_gray
+        margin-top: 6px
         @include mdScreen
             font-size: 22px
         span
-            margin-top: 6px
             display: inline-block
+        + .btn__sm-text
+            display: inline-flex
+            margin-top: 6px
+            &:not(:first-child)
+                margin-left: 0
+                @include smScreen
+                    margin-left: 10px 
+            &::before
+                margin: 2px 4px 0 0
+                content: ''
+                width: 17px
+                height: 17px
+                background: url('../img/main/icon_search_blue.svg'), url('../img/main/icon_search_white.svg') no-repeat left center
+                +default_animation
+            &:hover
+                &::before
+                    background: url('../img/main/icon_search_white.svg')
     &__search
         b
             &:not(:first-child)

@@ -361,9 +361,24 @@ a.title__school:hover {
   color: #76bfff;
 }
 
+@media (min-width: 576px) {
+  .title__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .title__default {
   font-size: 18px;
   color: #7f7f7f;
+  margin-top: 6px;
 }
 
 @media (min-width: 768px) {
@@ -373,8 +388,38 @@ a.title__school:hover {
 }
 
 .title__default span {
-  margin-top: 6px;
   display: inline-block;
+}
+
+.title__default + .btn__sm-text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 6px;
+}
+
+.title__default + .btn__sm-text:not(:first-child) {
+  margin-left: 0;
+}
+
+@media (min-width: 576px) {
+  .title__default + .btn__sm-text:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.title__default + .btn__sm-text::before {
+  margin: 2px 4px 0 0;
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: url("../img/main/icon_search_blue.svg"), url("../img/main/icon_search_white.svg") no-repeat left center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.title__default + .btn__sm-text:hover::before {
+  background: url("../img/main/icon_search_white.svg");
 }
 
 .title__search b:not(:first-child) {
@@ -825,13 +870,22 @@ a.title__school:hover {
 }
 
 .btn__sm-text .detail__school-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 1px 5px 0 0;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 }
 
 .btn__sm-text .detail__school-btn img {
-  width: 5px;
+  height: 12px;
+  vertical-align: unset;
 }
 
 .btn__sm-text:not(:first-child) {
