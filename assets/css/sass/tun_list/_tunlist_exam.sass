@@ -1,0 +1,55 @@
+ul.tunlist__exam
+    
+    // head set
+    .tunlist
+        // 列
+        &__head-list
+            padding: 10px 7px 11px
+            span
+                &:last-child
+                    margin-right: 78px
+                    margin-left: auto
+
+    // content set
+    .tunlist
+        // 列
+        &__list
+            @include smScreen
+                padding: 11px 7px
+        // 群組1__左 包 (時間) (學校代號 系名 最低分數)
+        &__top
+            @include smScreen
+                width: 100%
+        // 群組1__左 群組2__左 
+        //時間
+        &__date
+            time
+        // 群組1__左 群組2__右 包(學校代號 系名 最低分數)
+        &__school
+            @include smScreen
+                width: 100%
+                align-content: space-between
+        // 學校代號
+        &__number
+        // 系名
+        &__name
+            @include smScreen
+                margin-right: auto
+        // 最低分數
+        &__fraction
+            display: flex
+            font-size: 16px
+            line-height: 1.2
+            color: $color_text_gray
+            text-align: left
+            margin-left: 10px
+            @include smScreen
+                justify-content: center
+                align-items: center
+                font-size: 17px
+                line-height: 0
+        // 群組1__右
+        &__bottom
+            // margin-left: 10px
+        // 查詢按鈕
+        &__btn

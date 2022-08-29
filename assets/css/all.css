@@ -5696,4 +5696,63 @@ svg.defs-only {
     margin-top: 48px;
   }
 }
+
+ul.tunlist__exam .tunlist__head-list {
+  padding: 10px 7px 11px;
+}
+
+ul.tunlist__exam .tunlist__head-list span:last-child {
+  margin-right: 78px;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  ul.tunlist__exam .tunlist__list {
+    padding: 11px 7px;
+  }
+}
+
+@media (min-width: 576px) {
+  ul.tunlist__exam .tunlist__top {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  ul.tunlist__exam .tunlist__school {
+    width: 100%;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  ul.tunlist__exam .tunlist__name {
+    margin-right: auto;
+  }
+}
+
+ul.tunlist__exam .tunlist__fraction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #7f7f7f;
+  text-align: left;
+  margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+  ul.tunlist__exam .tunlist__fraction {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 17px;
+    line-height: 0;
+  }
+}
 /*# sourceMappingURL=all.css.map */
